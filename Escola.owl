@@ -1,0 +1,337 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-6 "http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:untitled-ontology-6="http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#Ensinar -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-6;Ensinar">
+        <rdfs:range rdf:resource="&untitled-ontology-6;Matéria"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Professor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#Estudar -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-6;Estudar">
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Estudante"/>
+        <rdfs:range rdf:resource="&untitled-ontology-6;Matéria"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#e_estudado_pelo -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-6;e_estudado_pelo">
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-6;Estudar"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#ensina -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-6;ensina">
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-6;Ensinar"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#estuda -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-6;estuda">
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-6;Estudar"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#é_ensinado_pelo -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-6;é_ensinado_pelo">
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-6;Ensinar"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#matricula -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-6;matricula">
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Estudante"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#nome -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-6;nome">
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Pessoa"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#staffID -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-6;staffID">
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Professor"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#Estudante -->
+
+    <owl:Class rdf:about="&untitled-ontology-6;Estudante">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#Exatas -->
+
+    <owl:Class rdf:about="&untitled-ontology-6;Exatas">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Matéria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#Humanas -->
+
+    <owl:Class rdf:about="&untitled-ontology-6;Humanas">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Matéria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#Matéria -->
+
+    <owl:Class rdf:about="&untitled-ontology-6;Matéria"/>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#Pessoa -->
+
+    <owl:Class rdf:about="&untitled-ontology-6;Pessoa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#Professor -->
+
+    <owl:Class rdf:about="&untitled-ontology-6;Professor">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#Biologia -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-6;Biologia">
+        <rdf:type rdf:resource="&untitled-ontology-6;Exatas"/>
+        <e_estudado_pelo rdf:resource="&untitled-ontology-6;Estudante3"/>
+        <é_ensinado_pelo rdf:resource="&untitled-ontology-6;Professor1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#Estudante1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-6;Estudante1">
+        <rdf:type rdf:resource="&untitled-ontology-6;Estudante"/>
+        <matricula rdf:datatype="&xsd;int">1309954738</matricula>
+        <nome rdf:datatype="&xsd;string">João Silva Morais</nome>
+        <estuda rdf:resource="&untitled-ontology-6;Literatura"/>
+        <estuda rdf:resource="&untitled-ontology-6;Matematica"/>
+        <estuda rdf:resource="&untitled-ontology-6;Quimica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#Estudante2 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-6;Estudante2">
+        <rdf:type rdf:resource="&untitled-ontology-6;Estudante"/>
+        <matricula rdf:datatype="&xsd;int">23487752922</matricula>
+        <nome rdf:datatype="&xsd;string">José Pereira da Silva</nome>
+        <estuda rdf:resource="&untitled-ontology-6;Fisica"/>
+        <estuda rdf:resource="&untitled-ontology-6;Geografia"/>
+        <estuda rdf:resource="&untitled-ontology-6;Historia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#Estudante3 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-6;Estudante3">
+        <rdf:type rdf:resource="&untitled-ontology-6;Estudante"/>
+        <matricula rdf:datatype="&xsd;int">239857923928</matricula>
+        <nome rdf:datatype="&xsd;string">Pedro Cavalcante Soares Neto</nome>
+        <estuda rdf:resource="&untitled-ontology-6;Biologia"/>
+        <estuda rdf:resource="&untitled-ontology-6;Português"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#Fisica -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-6;Fisica">
+        <rdf:type rdf:resource="&untitled-ontology-6;Exatas"/>
+        <e_estudado_pelo rdf:resource="&untitled-ontology-6;Estudante2"/>
+        <é_ensinado_pelo rdf:resource="&untitled-ontology-6;Professor1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#Geografia -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-6;Geografia">
+        <rdf:type rdf:resource="&untitled-ontology-6;Humanas"/>
+        <e_estudado_pelo rdf:resource="&untitled-ontology-6;Estudante2"/>
+        <é_ensinado_pelo rdf:resource="&untitled-ontology-6;Professor2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#Historia -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-6;Historia">
+        <rdf:type rdf:resource="&untitled-ontology-6;Humanas"/>
+        <e_estudado_pelo rdf:resource="&untitled-ontology-6;Estudante2"/>
+        <é_ensinado_pelo rdf:resource="&untitled-ontology-6;Professor2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#Literatura -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-6;Literatura">
+        <rdf:type rdf:resource="&untitled-ontology-6;Humanas"/>
+        <e_estudado_pelo rdf:resource="&untitled-ontology-6;Estudante1"/>
+        <é_ensinado_pelo rdf:resource="&untitled-ontology-6;Professor2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#Matematica -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-6;Matematica">
+        <rdf:type rdf:resource="&untitled-ontology-6;Exatas"/>
+        <e_estudado_pelo rdf:resource="&untitled-ontology-6;Estudante1"/>
+        <é_ensinado_pelo rdf:resource="&untitled-ontology-6;Professor1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#Português -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-6;Português">
+        <rdf:type rdf:resource="&untitled-ontology-6;Humanas"/>
+        <e_estudado_pelo rdf:resource="&untitled-ontology-6;Estudante3"/>
+        <é_ensinado_pelo rdf:resource="&untitled-ontology-6;Professor2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#Professor1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-6;Professor1">
+        <rdf:type rdf:resource="&untitled-ontology-6;Professor"/>
+        <staffID rdf:datatype="&xsd;int">19992939495</staffID>
+        <nome rdf:datatype="&xsd;string">Girafales da Silva Pinto</nome>
+        <ensina rdf:resource="&untitled-ontology-6;Biologia"/>
+        <ensina rdf:resource="&untitled-ontology-6;Fisica"/>
+        <ensina rdf:resource="&untitled-ontology-6;Matematica"/>
+        <ensina rdf:resource="&untitled-ontology-6;Quimica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#Professor2 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-6;Professor2">
+        <rdf:type rdf:resource="&untitled-ontology-6;Professor"/>
+        <staffID rdf:datatype="&xsd;int">2936458918</staffID>
+        <nome rdf:datatype="&xsd;string">Felipe Soares Costa</nome>
+        <ensina rdf:resource="&untitled-ontology-6;Geografia"/>
+        <ensina rdf:resource="&untitled-ontology-6;Historia"/>
+        <ensina rdf:resource="&untitled-ontology-6;Literatura"/>
+        <ensina rdf:resource="&untitled-ontology-6;Português"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-6#Quimica -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-6;Quimica">
+        <rdf:type rdf:resource="&untitled-ontology-6;Exatas"/>
+        <e_estudado_pelo rdf:resource="&untitled-ontology-6;Estudante1"/>
+        <é_ensinado_pelo rdf:resource="&untitled-ontology-6;Professor1"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/dinos/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/dinos/">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Declaration>
+        <Class IRI="Dinosaur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Place"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="origin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="partof"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="America_do_sul"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Brasil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Brasília"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Taguatinga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Velocyraptor"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="Place"/>
+        <NamedIndividual IRI="America_do_sul"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Place"/>
+        <NamedIndividual IRI="Brasil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Place"/>
+        <NamedIndividual IRI="Brasília"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Place"/>
+        <NamedIndividual IRI="Taguatinga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Dinosaur"/>
+        <NamedIndividual IRI="Velocyraptor"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="partof"/>
+        <NamedIndividual IRI="Brasil"/>
+        <NamedIndividual IRI="America_do_sul"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="partof"/>
+        <NamedIndividual IRI="Brasília"/>
+        <NamedIndividual IRI="Brasil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="partof"/>
+        <NamedIndividual IRI="Taguatinga"/>
+        <NamedIndividual IRI="Brasília"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="origin"/>
+        <NamedIndividual IRI="Velocyraptor"/>
+        <NamedIndividual IRI="Taguatinga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="origin"/>
+        <Class IRI="Dinosaur"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="partof"/>
+        <Class IRI="Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="origin"/>
+        <Class IRI="Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="partof"/>
+        <Class IRI="Place"/>
+    </ObjectPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="Dinosaur"/>
+                <Variable IRI="urn:swrl#d"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="Place"/>
+                <Variable IRI="urn:swrl#pl1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="Place"/>
+                <Variable IRI="urn:swrl#pl2"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="origin"/>
+                <Variable IRI="urn:swrl#d"/>
+                <Variable IRI="urn:swrl#pl1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="partof"/>
+                <Variable IRI="urn:swrl#pl1"/>
+                <Variable IRI="urn:swrl#pl2"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="origin"/>
+                <Variable IRI="urn:swrl#d"/>
+                <Variable IRI="urn:swrl#pl2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="Place"/>
+                <Variable IRI="urn:swrl#pl1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="Place"/>
+                <Variable IRI="urn:swrl#pl2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="Place"/>
+                <Variable IRI="urn:swrl#pl3"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="partof"/>
+                <Variable IRI="urn:swrl#pl1"/>
+                <Variable IRI="urn:swrl#pl2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="partof"/>
+                <Variable IRI="urn:swrl#pl2"/>
+                <Variable IRI="urn:swrl#pl3"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="partof"/>
+                <Variable IRI="urn:swrl#pl1"/>
+                <Variable IRI="urn:swrl#pl3"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

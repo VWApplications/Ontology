@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-2 "http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#"
+     xml:base="http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#TemFilha -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-2;TemFilha">
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-2;TemFilho_G"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#TemFilho -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-2;TemFilho">
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-2;TemFilho_G"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#TemFilho_G -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-2;TemFilho_G"/>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#TemGenitor -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-2;TemGenitor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#TemIrma -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-2;TemIrma">
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-2;TemIrmão_G"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#TemIrmão -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-2;TemIrmão">
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-2;TemIrmão_G"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#TemIrmão_G -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-2;TemIrmão_G"/>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#TemMae -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-2;TemMae">
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-2;TemGenitor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#TemPai -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-2;TemPai">
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-2;TemGenitor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#TemNome -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-2;TemNome"/>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#TemSexo -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-2;TemSexo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#Filha -->
+
+    <owl:Class rdf:about="&untitled-ontology-2;Filha">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Filho_G"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#Filho -->
+
+    <owl:Class rdf:about="&untitled-ontology-2;Filho">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Filho_G"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#Filho_G -->
+
+    <owl:Class rdf:about="&untitled-ontology-2;Filho_G">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#Genitor_G -->
+
+    <owl:Class rdf:about="&untitled-ontology-2;Genitor_G">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#Homem -->
+
+    <owl:Class rdf:about="&untitled-ontology-2;Homem">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#Irmã -->
+
+    <owl:Class rdf:about="&untitled-ontology-2;Irmã">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Irmão_G"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#Irmão -->
+
+    <owl:Class rdf:about="&untitled-ontology-2;Irmão">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Irmão_G"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#Irmão_G -->
+
+    <owl:Class rdf:about="&untitled-ontology-2;Irmão_G">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#Mulher -->
+
+    <owl:Class rdf:about="&untitled-ontology-2;Mulher">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#Mãe -->
+
+    <owl:Class rdf:about="&untitled-ontology-2;Mãe">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Genitor_G"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#Pai -->
+
+    <owl:Class rdf:about="&untitled-ontology-2;Pai">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Genitor_G"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#Pessoa -->
+
+    <owl:Class rdf:about="&untitled-ontology-2;Pessoa"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#Bart -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-2;Bart">
+        <rdf:type rdf:resource="&untitled-ontology-2;Filho"/>
+        <rdf:type rdf:resource="&untitled-ontology-2;Irmão"/>
+        <TemPai rdf:resource="&untitled-ontology-2;Homer"/>
+        <TemIrma rdf:resource="&untitled-ontology-2;Lisa"/>
+        <TemIrma rdf:resource="&untitled-ontology-2;Maggie"/>
+        <TemMae rdf:resource="&untitled-ontology-2;Marge"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#Homer -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-2;Homer">
+        <rdf:type rdf:resource="&untitled-ontology-2;Pai"/>
+        <TemNome rdf:datatype="&xsd;string">Homer Simpsons</TemNome>
+        <TemSexo rdf:datatype="&xsd;string">Masculino</TemSexo>
+        <TemFilho rdf:resource="&untitled-ontology-2;Bart"/>
+        <TemFilha rdf:resource="&untitled-ontology-2;Lisa"/>
+        <TemFilha rdf:resource="&untitled-ontology-2;Maggie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#Lisa -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-2;Lisa">
+        <rdf:type rdf:resource="&untitled-ontology-2;Filha"/>
+        <rdf:type rdf:resource="&untitled-ontology-2;Irmã"/>
+        <TemIrmão rdf:resource="&untitled-ontology-2;Bart"/>
+        <TemPai rdf:resource="&untitled-ontology-2;Homer"/>
+        <TemIrma rdf:resource="&untitled-ontology-2;Maggie"/>
+        <TemMae rdf:resource="&untitled-ontology-2;Marge"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#Maggie -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-2;Maggie">
+        <rdf:type rdf:resource="&untitled-ontology-2;Filha"/>
+        <rdf:type rdf:resource="&untitled-ontology-2;Irmã"/>
+        <TemIrmão rdf:resource="&untitled-ontology-2;Bart"/>
+        <TemPai rdf:resource="&untitled-ontology-2;Homer"/>
+        <TemIrma rdf:resource="&untitled-ontology-2;Lisa"/>
+        <TemMae rdf:resource="&untitled-ontology-2;Marge"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2015/9/untitled-ontology-2#Marge -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-2;Marge">
+        <rdf:type rdf:resource="&untitled-ontology-2;Mãe"/>
+        <TemFilho rdf:resource="&untitled-ontology-2;Bart"/>
+        <TemFilha rdf:resource="&untitled-ontology-2;Lisa"/>
+        <TemFilha rdf:resource="&untitled-ontology-2;Maggie"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
